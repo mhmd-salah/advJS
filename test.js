@@ -49,3 +49,7 @@ fetch('https://api1.example.com/data')
     // Handle any errors
     console.error('Error:', error);
   });
+
+
+
+
