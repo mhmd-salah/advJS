@@ -1,8 +1,95 @@
-
-
-@media (hover: hover) {
+/* @media (hover: hover) {
   a:hover {
     background-color: teal;
   }
 }
 
+.container {
+  display: contents;
+}
+.pop::before {
+  content: "";
+  background-color: red;
+}
+
+[popover] {
+  font-size: 1.2rem;
+  padding: 10px;
+  opacity: 0;
+  transform: scaleX(1);
+  transition: opacity 0.7s, transform 0.7s, overlay 0.7s allow-discrete,
+    display 0.7s allow-discrete;
+}
+
+[popover]:popover-open {
+  opacity: 1;
+  transform: scaleX(1);
+}
+
+[popover]:popover-open::backdrop {
+  backdrop-filter: blur(5px);
+}
+[popover]:popover-closed {
+  opacity: 0;
+  transform: scaleX(0);
+  color: red;
+} */
+/* -----------------------------*/
+
+/* body {
+  margin: 0;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+
+header nav ul,
+.tips {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+  margin: 0;
+  padding: 0;
+}
+
+.tips {
+  padding: 20px;
+  display: none;
+}
+
+.t:hover .tips {
+  display: block;
+}
+
+/* --- */
+
+/* @supports not (display: grid) {
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+}  */
+
+-root {
+  --main-color: teal;
+}
+
+/* body {
+  background-color: var(--main-color);
+  color: light-dark(red, green);
+  animation: color-change 1s infinite alternate;
+}
+
+@keyframes color-change {
+  from {
+    --main-color: teal;
+  }
+  to {
+    --main-color: seagreen;
+  }
+} */

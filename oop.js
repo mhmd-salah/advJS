@@ -1,8 +1,20 @@
-function Car(name,color){
-   this.name = name;
-   this.color= color
-   this.start = ()=>console.log("start engin")
-}
-const bmw = new Car("bmw", "red")
-console.log(bmw)
-bmw.start()
+let arr = [0, 2, 4, 61, 2, false, "", null, undefined];
+
+const filtered = arr.filter(Boolean);
+
+console.log(filtered);
+// [ 2, 4, 61, 2 ]
+
+//---------------------
+// function repeatEvery(func, interval) {
+//   func();
+//   setTimeout(() => repeatEvery(func, interval), interval);
+// }
+//---------------------
+
+//---------------------
+console.log("hello mohamed salah")
+//---------------------
+
+
+
