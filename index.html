@@ -3,34 +3,22 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
     <title>Document</title>
   </head>
   <body>
-    <button popoverTarget="popover">Open Popover</button>
-    <div popover="auto" id="popover" class="pop">Greetings, one and all!</div>
+    <div id="parent">
+      <button id="child">Click Me</button>
+    </div>
 
-    <custom-card
-      title="عنوان البطاقة"
-      subtitle="عنوان فرعي للبطاقة"
-      theme="dark"
-    >
-      <p>محتوى البطاقة</p>
-    </custom-card>
-    <custom-card
-      title="Card Title"
-      subtitle="Card description"
-      theme="light"
-    >
-      <p>Card Content</p>
-    </custom-card>
+    <script>
+      document.getElementById("parent").addEventListener("click", () => {
+        alert("parent clicked");
+      });
 
-    <!-- <script src="shadowDom.js"></script>     -->
-    <script src="test-shadow-dom.js"></script>
+      document.getElementById("child").addEventListener("click", (event) => {
+        event.stopPropagation(); // stop propagation
+        alert("child clicked");
+      });
+    </script>
   </body>
 </html>
-
-<!-- 
-JetBrains Mono, Menlo, Monaco, Courier New, monospace
-'Fira Code', Consolas, 'Courier New', monospace
--->
